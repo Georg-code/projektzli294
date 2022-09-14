@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            
+            var tbl = $("<table/>").attr("id", "mytable");
+            $("#div1").append(tbl);
+            for (var i = 0; i < obj.length; i++) {
+                var tr = "<tr>";
+                var td1 = "<td>" + obj[i]["id"] + "</td>";
+                var td2 = "<td>" + obj[i]["name"] + "</td>";
+                var td3 = "<td>" + obj[i]["color"] + "</td></tr>";
+
+                $("#mytable").append(tr + td1 + td2 + td3);
+
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
